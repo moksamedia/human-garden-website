@@ -40,6 +40,10 @@ $(document).ready(function(){
 		}
 	});
 
+});
+
+$(function(){
+
 	$("#contactForm").on( "submit", function( event ) {
 		event.preventDefault();
 		if (!$("#contactForm").valid()) return;
@@ -49,12 +53,6 @@ $(document).ready(function(){
 			});
 		});
 	});
-
-});
-
-$(function(){
-
-
 
 	$('#navbar').on('show.bs.collapse', function () {
 		$('nav').addClass('shrink');
