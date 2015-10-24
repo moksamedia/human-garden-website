@@ -76,6 +76,10 @@ div.row {
     margin-bottom: 7%;
 }
 
+.thanks {
+    display:none;
+}
+
 @media (max-width: 768px) {
     .navbar, .discover {
         display: none;
