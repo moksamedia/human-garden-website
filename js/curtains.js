@@ -1,6 +1,8 @@
 jQuery(document).ready(function($){
+
 	//change this value if you want to change the speed of the scale effect
 	var	scaleSpeed = 0.3,
+
 	//change this value if you want to set a different initial opacity for the .half
 		boxShadowOpacityInitialValue = 0.7,
 		animating = false; 
@@ -10,6 +12,7 @@ jQuery(document).ready(function($){
 	$(window).on('resize', function(){
 		MQ = window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, "");
 	});
+
 
 	//bind the animation to the window scroll event
 	triggerAnimation();
@@ -45,13 +48,18 @@ jQuery(document).ready(function($){
 		//update navigation arrows visibility
 		checkNavigation();
 	}
-	
+
+
 	function animateSection () {
+
 		var scrollTop = $(window).scrollTop(),
 			windowHeight = $(window).height(),
 			windowWidth = $(window).width();
-		
+
 		$('.section').each(function(){
+
+			var sectionId = $(this).attr('id');
+
 			var actualBlock = $(this),
 				offset = scrollTop - actualBlock.offset().top,
 				scale = 1,
@@ -64,41 +72,50 @@ jQuery(document).ready(function($){
 				scale = 1,
 				opacity = 1,
 				translate = (windowWidth * 0.5 * (- offset/windowHeight)).toFixed(0)+'px';
+				console.log(sectionId + ":moving toward center -> " + translate);
 
 			} else if( offset > 0 && offset <= windowHeight ) {
 				//the two .half are in the center - scale the .container-fluid element and reduce the opacity
+				console.log(sectionId + ":in the center");
 				translate = 0+'px',
 				scale = (1 - ( offset * scaleSpeed/windowHeight)).toFixed(5),
 				opacity = ( 1 - ( offset/windowHeight) ).toFixed(5);
 
 			} else if( offset < -windowHeight ) {
+				//console.log(sectionId + ":not yet visible");
 				//section not yet visible
 				scale = 1,
 				translate = windowWidth/2+'px',
 				opacity = 1;
 
 			} else {
+				console.log(sectionId + ":hide section");
 				//section not visible anymore
 				opacity = 0;
 			}
-			
+
+			//console.log(translate);
+
 			boxShadowOpacity = parseInt(translate.replace('px', ''))*boxShadowOpacityInitialValue/20;
-			
+
 			//translate/scale section blocks
 			scaleBlock(actualBlock.find('.container-fluid'), scale, opacity);
 
 			var directionFirstChild = ( actualBlock.is(':nth-of-type(even)') ) ? '-': '+';
 			var directionSecondChild = ( actualBlock.is(':nth-of-type(even)') ) ? '+': '-';
+
 			if(actualBlock.find('.half')) {
 				translateBlock(actualBlock.find('.half').eq(0), directionFirstChild+translate, boxShadowOpacity);
-				translateBlock(actualBlock.find('.half').eq(1), directionSecondChild+translate, boxShadowOpacity);	
+				translateBlock(actualBlock.find('.half').eq(1), directionSecondChild+translate, boxShadowOpacity);
 			}
+
 			//this is used to navigate through the sections
-			( offset >= 0 && offset < windowHeight ) ? actualBlock.addClass('is-visible') : actualBlock.removeClass('is-visible');		
+			( offset >= 0 && offset < windowHeight ) ? actualBlock.addClass('is-visible') : actualBlock.removeClass('is-visible');
 		});
 	}
 
 	function translateBlock(elem, value, shadow) {
+
 		var position = Math.ceil(Math.abs(value.replace('px', '')));
 		
 		if( position >= $(window).width()/2 ) {
@@ -109,7 +126,7 @@ jQuery(document).ready(function($){
 
 		elem.css({
 		    '-moz-transform': 'translateX(' + value + ')',
-		    '-webkit-transform': 'translateX(' + value + ')',
+		    '-webkit-transform': 'translate3d(' + value + ',0,0)',
 			'-ms-transform': 'translateX(' + value + ')',
 			'-o-transform': 'translateX(' + value + ')',
 			'transform': 'translateX(' + value + ')',
