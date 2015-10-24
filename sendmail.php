@@ -2,11 +2,6 @@
 // Email Submit
 // Note: filter_var() requires PHP >= 5.2.0
 
-if ($_SERVER['SERVER_ADDR'] != $_SERVER['REMOTE_ADDR']){
-  $this->output->set_status_header(400, 'No Remote Access Allowed');
-  exit; //just for good measure
-}
-
 if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['subject']) && isset($_POST['message']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
  
   // detect & prevent header injections
@@ -25,7 +20,7 @@ $headers = 'From: ' . $_POST["name"] . '<' . $_POST["email"] . '>' . "\r\n" .
     'X-Priority: 1' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
   
-  //
+
   mail( "andrewcarterhughes@gmail.com", $_POST['subject'], $_POST['message'], $headers );
 
 }
