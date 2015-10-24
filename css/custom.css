@@ -51,7 +51,6 @@
 }
 
 
-
 div.main-title {
   background-color: rgba(0,0,0,0.3);
   padding:20px;
@@ -71,4 +70,18 @@ div.main-title {
 
 #footer {
   padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .navbar, .discover {
+        display: none;
+    }
+    .main-title h1 {
+        font-size:35px;
+    }
+
+    .main-title p {
+        font-size:18px;
+    }
+
 }
