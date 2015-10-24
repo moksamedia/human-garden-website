@@ -7,12 +7,10 @@
   background-size: cover;
 }
 
-
 #page1b .half.bg {
   background-image: url('../img/books.jpg');
   background-size: cover;
 }
-
 
 #page2 .half.bg {
   background-image: url("../img/mother-earth-tall-cc.jpg");
@@ -22,6 +20,7 @@
 #page3 .half.bg {
   background-image: url('../img/erin-trees.jpg');
   background-size: cover;
+  background-position: center bottom;
 }
 
 #page4 .half.bg {
@@ -37,6 +36,7 @@
 #page6 .half.bg {
   background-image: url('../img/jung-revelation.jpg');
   background-size: cover;
+  background-position: center bottom;
 }
 
 #page7 .half.bg {
