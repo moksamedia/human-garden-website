@@ -72,6 +72,10 @@ div.main-title {
   padding: 10px 0;
 }
 
+div.row {
+    margin-bottom: 7%;
+}
+
 @media (max-width: 768px) {
     .navbar, .discover {
         display: none;
