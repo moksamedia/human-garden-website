@@ -1,0 +1,74 @@
+#intro.bg-image .container-fluid {
+	background-image: url('../img/garden-troll-with-staff.jpg');
+}
+
+#page1 .half.bg {
+  background-image: url('../img/jung-blue-tree.jpg');
+  background-size: cover;
+}
+
+
+#page1b .half.bg {
+  background-image: url('../img/books.jpg');
+  background-size: cover;
+}
+
+
+#page2 .half.bg {
+  background-image: url("../img/mother-earth-tall-cc.jpg");
+  background-size: cover;
+}
+
+#page3 .half.bg {
+  background-image: url('../img/erin-trees.jpg');
+  background-size: cover;
+}
+
+#page4 .half.bg {
+  background-image: url('../img/di-vinci-fetus2.jpg');
+  background-size: cover;
+}
+
+#page5 .half.bg {
+  background-image: url('../img/michael-karcz.jpg');
+  background-size: cover;
+}
+
+#page6 .half.bg {
+  background-image: url('../img/jung-revelation.jpg');
+  background-size: cover;
+}
+
+#page7 .half.bg {
+  background-image: url('../img/plants.jpg');
+  background-size: cover;
+}
+
+
+#contact .half.bg {
+  background-image: url("../img/Earth_from_Space.jpg");
+  background-size: cover;
+}
+
+
+
+div.main-title {
+  background-color: rgba(0,0,0,0.3);
+  padding:20px;
+}
+
+.main-title h1 {
+  font-size:55px;
+}
+
+.main-title p {
+  font-size:35px;
+}
+
+.emphasize {
+  text-decoration: underline;
+}
+
+#footer {
+  padding: 10px 0;
+}
