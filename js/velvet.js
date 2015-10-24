@@ -17,8 +17,45 @@ $(window).scroll(function() {
 
 });
 
+$(document).ready(function(){
+	$("#contactForm").validate({
+		rules: {
+			subject: {
+				required: true
+			},
+			name: {
+				required: true,
+				minlength:1,
+				maxlength:50
+			},
+			email: {
+				required: true,
+				email:true
+			},
+			message: {
+				required: true,
+				minlength:1,
+				maxlength:5000
+			}
+		}
+	});
+
+	$("#contactForm").on( "submit", function( event ) {
+		event.preventDefault();
+		if (!$("#contactForm").valid()) return;
+		$.post('sendmail.php', $('#contactForm').serialize()).done(function( data ) {
+			$('.tohideaftermail').slideUp(function() {
+				$('.thanks').slideDown();
+			});
+		});
+	});
+
+});
+
 $(function(){
-	
+
+
+
 	$('#navbar').on('show.bs.collapse', function () {
 		$('nav').addClass('shrink');
 	});

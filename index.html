@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/velvet.css">
 	<link rel="stylesheet" href="css/custom.css">
+
 </head>
 <body>	
 
@@ -151,7 +152,7 @@
 							<div class="col-lg-6">
 								<h4 class="section-subtitle"><i class="fa fa-rocket"></i>Sobriety</h4>
 								<p class="text-md text-italic text-muted">
-									Sobriety is important because the garden is a place to accept ourselves as we are and potentially transform ourselves through this act. It is a place to be, fully, not a place of escape. <span class="emphasize">It is a place to live, laugh, love, and learn about ourselves, as we are.<span>
+									Sobriety is important because the garden is a place to accept ourselves as we are and potentially transform ourselves through this act. It is a place to be, fully, not a place of escape. <span class="emphasize">It is a place to learn about ourselves, as we are.<span>
 								</p>
 							</div>
 							<div class="col-lg-6">
@@ -386,7 +387,7 @@
 			<div class="col-lg-6 half">
 				
 				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2">
+					<div class="col-lg-8 col-lg-offset-2 tohideaftermail">
 
 						<div class="section-header">
 							<h2 class="section-title">What will you create at the Human Garden?</h2>
@@ -397,22 +398,36 @@
 							This is a new event, and we're working hard to make it happen. One of the challenges with starting something new like this is gauging interest. So if you're made it this far through the website and you think the Human Garden is something you'd like to either attend or get involved with, please let us know!
 						</p>
 
-						<form id="contact" method="post" class="form" role="form">
+						<form id="contactForm" method="post" class="form" role="form">
 							<div class="form-group">
-								<input class="form-control" id="subject" name="subject" placeholder="Subject" type="text" />
+								<input class="form-control" id="subject" name="subject" placeholder="Subject" type="text" required/>
 							</div>
 							<div class="form-group">
-								<input class="form-control" id="name" name="name" placeholder="Name" type="text" />
+								<input class="form-control" id="name" name="name" placeholder="Name" type="text" required/>
 							</div>
 							<div class="form-group">
-								<input class="form-control" id="email" name="email" placeholder="Email" type="text" />
+								<input class="form-control" id="email" name="email" placeholder="Email" type="text" required/>
 							</div>
-							<textarea class="form-control" id="message" name="message" placeholder="Message" rows="6"></textarea>
+							<textarea class="form-control" id="message" name="message" placeholder="Message" rows="6" required></textarea>
 							<br />
 							<button class="btn btn-velvet" type="submit">Submit</button>
 						</form>
 
 					</div>
+
+					<div class="col-lg-8 col-lg-offset-2 thanks">
+
+						<div class="section-header">
+							<h2 class="section-title">Thanks for your interest in the Human Garden!</h2>
+						</div>
+
+						<p class="text-md text-italic text-muted">
+							We promise we won't spam you, but we will send you ocassional emails about new developments and opportunities to help.
+						</p>
+
+					</div>
+
+
 				</div>
 
 			</div>
@@ -438,6 +453,7 @@
 	</nav><!-- /#vertical-nav -->
 		
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/curtains.js"></script>
