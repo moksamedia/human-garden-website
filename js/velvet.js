@@ -43,7 +43,7 @@ $(document).ready(function(){
 	$("#contactForm").on( "submit", function( event ) {
 		event.preventDefault();
 		if (!$("#contactForm").valid()) return;
-		$.post('sendmail.php', $('#contactForm').serialize()).done(function( data ) {
+		$.post('./sendmail.php', $('#contactForm').serialize()).done(function( data ) {
 			$('.tohideaftermail').slideUp(function() {
 				$('.thanks').slideDown();
 			});
