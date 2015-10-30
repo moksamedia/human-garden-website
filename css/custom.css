@@ -83,12 +83,21 @@ div.row {
     display:none;
 }
 
-#intro .discover, #intro .discover:hover, #intro .discover:active{
+#intro .discover, #intro .discover:hover, #intro .discover:active {
     font-size: 150%;
 }
 
-@media (max-width: 768px) {
-    .navbar, .discover {
+#intro .discover {
+    opacity:0.8;
+}
+
+span.smaller {
+    font-size: 70%;
+}
+
+@media only screen and (max-width: 1170px) {
+
+    .discover {
         display: none;
     }
     .main-title h1 {
@@ -96,12 +105,9 @@ div.row {
     }
 
     .main-title p {
-        font-size:18px;
+        font-size:22px;
     }
 
-}
-
-@media only screen and (max-width: 1170px) {
     .row {
         margin-left:7%;
         margin-right:7%;
