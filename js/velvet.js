@@ -18,6 +18,16 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function(){
+
+	$('#what_is_a_burn_popup').popup({
+
+	});
+
+	$('#what_is_a_burn').click(function(e) {
+		e.preventDefault();
+		$('#what_is_a_burn_popup').popup('show');
+	});
+
 	$("#contactForm").validate({
 		rules: {
 			subject: {
