@@ -72,8 +72,8 @@ div.main-title {
   font-size:35px;
 }
 
-.emphasize {
-  text-decoration: underline;
+.emphasize, .emphcolor {
+    color:hsl(354, 80% , 30%);
 }
 
 #footer {
@@ -118,6 +118,14 @@ span.smaller {
 #what_is_a_burn_popup button {
     margin-top:20px;
     float:right;
+}
+
+form#contactForm {
+    margin-top:30px;
+}
+
+div.section-header.contact {
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 1170px) {
