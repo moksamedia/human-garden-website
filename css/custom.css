@@ -47,6 +47,11 @@
   background-size: cover;
 }
 
+#page8 .half.bg {
+    background-image: url('../img/red-and-blue.jpg');
+    background-size: cover;
+}
+
 
 #contact .half.bg {
   background-image: url("../img/Earth_from_Space.jpg");
@@ -124,4 +129,9 @@ span.smaller {
     .half.bg {
         min-height: 60vh;
     }
+}
+
+a.navbar-brand {
+    pointer-events: none;
+    cursor: default;
 }
