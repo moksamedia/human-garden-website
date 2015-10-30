@@ -20,7 +20,7 @@ $(window).scroll(function() {
 $(document).ready(function(){
 
 	$('#what_is_a_burn_popup').popup({
-
+		transition: 'all 0.3s'
 	});
 
 	$('#what_is_a_burn').click(function(e) {
