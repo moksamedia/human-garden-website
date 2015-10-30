@@ -95,6 +95,12 @@ span.smaller {
     font-size: 70%;
 }
 
+@media only screen and (max-width: 786px) {
+    .navbar {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1170px) {
 
     .discover {
