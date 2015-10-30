@@ -27,6 +27,7 @@ jQuery(document).ready(function($){
     $('#vertical-nav .next').on('click', function(){
     	nextSection();
     });
+
     $(document).keydown(function(event){
 		if( event.which=='38' ) {
 			prevSection();
@@ -72,11 +73,11 @@ jQuery(document).ready(function($){
 				scale = 1,
 				opacity = 1,
 				translate = (windowWidth * 0.5 * (- offset/windowHeight)).toFixed(0)+'px';
-				console.log(sectionId + ":moving toward center -> " + translate);
+				//console.log(sectionId + ":moving toward center -> " + translate);
 
 			} else if( offset > 0 && offset <= windowHeight ) {
 				//the two .half are in the center - scale the .container-fluid element and reduce the opacity
-				console.log(sectionId + ":in the center");
+				//console.log(sectionId + ":in the center");
 				translate = 0+'px',
 				scale = (1 - ( offset * scaleSpeed/windowHeight)).toFixed(5),
 				opacity = ( 1 - ( offset/windowHeight) ).toFixed(5);
@@ -89,7 +90,7 @@ jQuery(document).ready(function($){
 				opacity = 1;
 
 			} else {
-				console.log(sectionId + ":hide section");
+				//console.log(sectionId + ":hide section");
 				//section not visible anymore
 				opacity = 0;
 			}

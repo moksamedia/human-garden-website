@@ -5,6 +5,7 @@
 #page1 .half.bg {
   background-image: url('../img/jung-blue-tree.jpg');
   background-size: cover;
+    background-position: center 30%;
 }
 
 #page1b .half.bg {
@@ -15,12 +16,13 @@
 #page2 .half.bg {
   background-image: url("../img/mother-earth-tall-cc.jpg");
   background-size: cover;
+    background-position: center center;
 }
 
 #page3 .half.bg {
   background-image: url('../img/erin-trees.jpg');
   background-size: cover;
-  background-position: center bottom;
+    background-position: center 90%;
 }
 
 #page4 .half.bg {
@@ -31,6 +33,7 @@
 #page5 .half.bg {
   background-image: url('../img/michael-karcz.jpg');
   background-size: cover;
+    background-position: center;
 }
 
 #page6 .half.bg {
@@ -80,6 +83,10 @@ div.row {
     display:none;
 }
 
+#intro .discover, #intro .discover:hover, #intro .discover:active{
+    font-size: 150%;
+}
+
 @media (max-width: 768px) {
     .navbar, .discover {
         display: none;
@@ -92,4 +99,17 @@ div.row {
         font-size:18px;
     }
 
+}
+
+@media only screen and (max-width: 1170px) {
+    .row {
+        margin-left:7%;
+        margin-right:7%;
+    }
+    .half {
+        min-height: 30vh;
+    }
+    .half.bg {
+        min-height: 60vh;
+    }
 }
