@@ -361,3 +361,6 @@ button.jp-stop {
   margin-top: 100px;
 }
 
+.jp-gui.jp-interface, .jp-gui.jp-interface .jp-progress .jp-seek-bar {
+  display:none !important; 
+}

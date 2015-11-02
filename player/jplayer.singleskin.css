@@ -26,12 +26,10 @@
 .jp-interface {
   position: relative;
   background-color: #eee;
-  width: 100%;
-  }
+  width: 100%; }
 
 .jp-audio .jp-interface {
-  height: 80px;
-  }
+  height: 80px; }
 
 .jp-audio-stream .jp-interface {
   height: 80px; }
@@ -54,7 +52,8 @@
 .jp-audio .jp-controls {
   width: 380px;
   padding: 20px 20px 0 20px;
-  }
+  position: relative;
+  top: -50px; }
 
 .jp-audio-stream .jp-controls {
   position: absolute;
@@ -279,8 +278,7 @@ button.jp-stop {
 
 /* @end */
 .jp-interface {
-  background-color: rgba(255, 255, 255, 0.2);
-  }
+  background-color: rgba(255, 255, 255, 0.2); }
 
 .jp-audio {
   background-image: url("./snakes.jpg");
@@ -290,5 +288,8 @@ button.jp-stop {
 
 .jp-type-single {
   margin-top: 100px; }
+
+.jp-gui.jp-interface, .jp-gui.jp-interface .jp-progress .jp-seek-bar {
+  display: none !important; }
 
 /*# sourceMappingURL=jplayer.singleskin.css.map */
