@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4dec577c-0495-4315-8aa7-d85f3ba5f73e" name="Default" comment="dinked css version">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/player/jplayer.singleskin.css.map" afterPath="$PROJECT_DIR$/player/jplayer.singleskin.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/player/jplayer.singleskin.css" afterPath="$PROJECT_DIR$/player/jplayer.singleskin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/player/jplayer.singleskin.scss" afterPath="$PROJECT_DIR$/player/jplayer.singleskin.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="human-garden-website.iws" />
@@ -31,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2549575">
-              <caret line="32" column="226" selection-start-line="32" selection-start-column="226" selection-end-line="32" selection-end-column="226" />
+            <state vertical-scroll-proportion="0.44759208">
+              <caret line="439" column="165" selection-start-line="439" selection-start-column="165" selection-end-line="439" selection-end-column="165" />
               <folding />
             </state>
           </provider>
@@ -869,8 +865,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2549575">
-          <caret line="32" column="226" selection-start-line="32" selection-start-column="226" selection-end-line="32" selection-end-column="226" />
+        <state vertical-scroll-proportion="0.44759208">
+          <caret line="439" column="165" selection-start-line="439" selection-start-column="165" selection-end-line="439" selection-end-column="165" />
           <folding />
         </state>
       </provider>
